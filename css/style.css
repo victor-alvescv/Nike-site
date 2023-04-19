@@ -1,124 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
 body {
-  margin: 1.5em;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
-
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 a {
-    text-decoration: none;
-    font-size: 1.3rem;
+  text-decoration: none;
+  font-size: 1.3rem;
 }
 
 .img__logo {
-    width: 80px;
+  width: 80px;
 }
 
 .hero-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: url('../assets/shoe.jpg');
-    background-size: cover;
-    background-position-x: 50%;
-    background-position-y: 20%;
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
-    overflow: hidden;
-    animation: introLoad 2s forwards;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../assets/shoe.jpg");
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 20%;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+  animation: introLoad 2s forwards;
 }
 
 nav {
-   position: fixed;
-   right: 0px;
-   top: 0px;
-   background-color: white;
-   height: 100vh;
-   width: 50%;
-   z-index: 2;
-   text-transform: uppercase;
-   transform: translateX(100%);
-   transition: transform .5s ease-in-out;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  background-color: white;
+  height: 100vh;
+  width: 50%;
+  z-index: 2;
+  text-transform: uppercase;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0px;
-    margin-top: 8em;
+  list-style-type: none;
+  padding: 0px;
+  margin-top: 8em;
+}
+
+.wrapper {
+  margin: 1.5em;
 }
 
 .links {
-    color: black;
-    padding: .75em 2em;
-    display: block;
-    width: 100%;
-    transition: all 300ms ease;
+  color: black;
+  padding: 0.75em 2em;
+  display: block;
+  width: 100%;
+  transition: all 300ms ease;
 }
 
 .links:hover {
-    background-color: rgb(226, 226, 226);
+  background-color: rgb(226, 226, 226);
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   animation: headerDown 1s ease-in-out forwards;
-   opacity: 0;
+  opacity: 0;
 }
 
 .menu {
-    width: 2.3em;
-    margin-top: -.6em;
-    cursor: pointer;
+  width: 2.3em;
+  margin-top: -0.6em;
+  cursor: pointer;
 }
 
 .close {
-    float: right;
-    margin: 2em;
-    width: 2.5em;
-    cursor: pointer;
+  float: right;
+  margin: 2em;
+  width: 2.5em;
+  cursor: pointer;
 }
 
 h1 {
-    font-size: 3rem;
-    margin-top: 2em;
-    line-height: 3.3rem;
+  font-size: 3rem;
+  margin-top: 2em;
+  line-height: 3.3rem;
 }
 
 .subhead {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 section.hero {
-    color: white;
-    height: 90vh;
-    animation: moveDown 1s ease-in-out forwards;
-    opacity: 0;
+  color: white;
+  height: 90vh;
+  animation: moveDown 1s ease-in-out forwards;
+  opacity: 0;
 }
 
 .down-arrow {
-    stroke: white;
-    position: absolute;
-    bottom: 8em;
-    width: 1em;
-    animation: moveArrow 1s alternate-reverse infinite;
+  stroke: white;
+  position: absolute;
+  bottom: 8em;
+  width: 1em;
+  animation: moveArrow 1s alternate-reverse infinite;
 }
 
 path {
-    fill: white;
+  fill: white;
 }
 
 .more-info {
-    animation: infoDown 2s ease-in-out forwards;
+  animation: infoDown 2s ease-in-out forwards;
 }
 
 .more-info img {
@@ -128,88 +132,154 @@ path {
 }
 
 .info__img {
-    border-radius: 2px;
-    box-shadow: 60px -16px red;
+  border-radius: 2px;
+  box-shadow: 60px -16px red;
 }
 
 .more-info .title {
-    font-weight: bold;
-    font-size: 1.25rem;
+  font-weight: bold;
+  font-size: 1.25rem;
 }
 
 .more-info .description {
-    line-height: 1.5rem;
+  line-height: 1.5rem;
 }
 
 .open-nav {
-    transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+body .footer {
+  position: absolute;
+  width: 100%;
+  background-color: red;
+  margin: 0px !important;
+  padding: 100px;
+  padding-left: 0px;
+  padding-right: 0px;
+  background: url("/assets/shoe-footer.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-size: 300%;
+  width: 100%;
+  z-index: -1;
+  text-align: center;
+  font-size: 12px;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer img {
+  width: 100px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
+
+li {
+  margin-right: 40px;
+  font-size: 10px;
+}
+
+li:nth-child(4) {
+  margin-right: 0px;
 }
 
 @media only screen and (min-width: 680px) {
-    body {
-        margin: 1.5em 5em;
-        font-family: "Poppins", sans-serif;
-      }
+  .wrapper {
+    margin: 1.5em 5em;
+    font-family: "Poppins", sans-serif;
+  }
+
+  li {
+    margin-right: 40px;
+    font-size: 14px;
+  }
+
+  body .footer {
+    position: absolute;
+    width: 100%;
+    background-color: red;
+    margin: 0px !important;
+    padding: 100px;
+    padding-left: 0px;
+    background: url("/assets/shoe-footer.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    z-index: -1;
+    text-align: center;
+    font-size: 12px;
+  }
 }
 
 @media only screen and (min-width: 920px) {
-   .menu {
+  .menu {
     display: none;
-   }
+  }
 
-   nav {
+  nav {
     transform: translateX(0);
     position: unset;
     display: block;
     width: auto;
     height: auto;
     background: none;
-   }
+  }
 
-   .close {
+  .close {
     display: none;
-   }
+  }
 
-   ul {
+  ul {
     display: flex;
     margin: 0;
-   }
+  }
 
-   .links {
+  .links {
     color: white;
-    padding: .5em 1.5em;
-    font-size: .9rem;
+    padding: 0.5em 1.5em;
+    font-size: 0.9rem;
     position: relative;
     display: inline;
     transition: all 300ms ease;
     font-weight: 500;
-   }
+  }
 
-   .links:hover {
+  .links:hover {
     background: none;
     color: black;
-   }
+  }
 
-
-   .hero-img {
+  .hero-img {
     left: unset;
     right: 0;
     width: 50%;
     height: 42em;
-   }
+  }
 
-   section.hero {
+  section.hero {
     color: black;
     width: 40%;
     height: auto;
     margin-bottom: 8em;
-    
-   }
+  }
 
-   .down-arrow {
+  .down-arrow {
     stroke: black;
     position: unset;
-   }
+  }
 
   path {
     fill: black;
@@ -244,69 +314,65 @@ path {
     width: 25em;
     justify-self: left;
   }
-
-} 
+}
 
 @media only screen and (min-width: 1200px) {
-   .container {
+  .container {
     width: 1200px;
     margin: 0 auto;
-   }
+  }
 
-   .feature{
+  .feature {
     gap: 0px;
-   }
+  }
 
-   .down-arrow {
+  .down-arrow {
     padding-bottom: 40px;
-   }
+  }
 }
 
 @keyframes introLoad {
-    from {
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0)
-    }
-    to {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
+  from {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
 }
 
 @keyframes moveArrow {
-    from {
-        transform: translateY(-20px)
-    }
-    to {
-        transform: translateY(0)
-    }
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 @keyframes moveDown {
-    from {
-        transform: translateY(-100px)
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes headerDown {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes infoDown {
-    from {
-        opacity: 0;
-
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
-
