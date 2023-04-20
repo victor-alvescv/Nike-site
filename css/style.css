@@ -176,23 +176,33 @@ body .footer {
   margin: 0 auto;
 }
 
-.footer img {
+.footer__content li {
+  transition: all 300ms ease;
+  cursor: default;
+  color: white;
+}
+
+.footer__content li:hover {
+  color: black;
+}
+
+.footer__img {
   width: 100px;
 }
 
-ul {
+.footer ul {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 0px;
 }
 
-li {
+.footer li {
   margin-right: 40px;
   font-size: 10px;
 }
 
-li:nth-child(4) {
+.footer li:nth-child(4) {
   margin-right: 0px;
 }
 
@@ -202,7 +212,7 @@ li:nth-child(4) {
     font-family: "Poppins", sans-serif;
   }
 
-  li {
+  .footer li {
     margin-right: 40px;
     font-size: 14px;
   }
